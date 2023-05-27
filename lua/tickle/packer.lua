@@ -16,10 +16,10 @@ return require('packer').startup(function(use)
 
 	-- color scheme 
 	use {
-		'rebelot/kanagawa.nvim',
-		as = 'kanagawa', 
+		'tanvirtin/monokai.nvim',
+		as = 'monokai', 
 		config = function()
-			vim.cmd('colorscheme kanagawa')
+			vim.cmd('colorscheme monokai')
 		end
 	}
 	-- tree sitter
