@@ -9,7 +9,7 @@ return require('packer').startup(function(use)
 
     -- teleport
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.1',
+        'nvim-telescope/telescope.nvim', tag = '0.1.4',
         -- or                            , branch = '0.1.x',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
@@ -90,26 +90,5 @@ return require('packer').startup(function(use)
                 -- refer to the configuration section below
             })
         end
-    })
-
-    use({
-        'numToStr/Comment.nvim',
-        config = function()
-            require('Comment').setup()
-        end
-    })
-
-    use({
-        "folke/todo-comments.nvim",
-        requires = "nvim-lua/plenary.nvim",
-        config = function()
-            require("todo-comments").setup {}
-        end
-    })
-
-
-    -- local env
-    use({
-        "/Users/t/code/banner.nvim/"
     })
 end)
