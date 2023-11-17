@@ -91,4 +91,10 @@ return require('packer').startup(function(use)
             })
         end
     })
+
+
+    -- screen shot
+    use({
+        'kristijanhusak/vim-carbon-now-sh'
+    })
 end)
