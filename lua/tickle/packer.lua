@@ -38,7 +38,7 @@ return require('packer').startup(function(use)
     -- lsp
     use {
         'VonHeikemen/lsp-zero.nvim',
-        branch = 'v1.x',
+        branch = 'v3.x',
         requires = {
             -- LSP Support
             { 'neovim/nvim-lspconfig' },
@@ -74,11 +74,6 @@ return require('packer').startup(function(use)
     -- copilot
     use("github/copilot.vim")
 
-    -- go
-    use('ray-x/go.nvim')
-    use('ray-x/guihua.lua')
-    use('neovim/nvim-lspconfig')
-
     -- trouble
     use({
         "folke/trouble.nvim",
@@ -92,9 +87,4 @@ return require('packer').startup(function(use)
         end
     })
 
-
-    -- screen shot
-    use({
-        'kristijanhusak/vim-carbon-now-sh'
-    })
 end)
