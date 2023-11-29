@@ -32,6 +32,7 @@ lsp_zero.format_on_save({
         ['rust_analyzer'] = { 'rust' },
         ['gopls'] = { 'go' },
         ['lua_ls'] = { 'lua' },
+        ['pyright'] = { 'python' },
     }
 })
 require('lspconfig').rust_analyzer.setup({
@@ -58,7 +59,7 @@ require('lspconfig').rust_analyzer.setup({
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-    ensure_installed = { 'tsserver', 'rust_analyzer', "gopls" },
+    ensure_installed = { 'tsserver', 'rust_analyzer', 'gopls', 'pyright' },
     handlers = {
         lsp_zero.default_setup,
         lua_ls = function()
@@ -84,6 +85,7 @@ cmp.setup({
         ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
         ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
         ['<C-y>'] = cmp.mapping.confirm({ select = true }),
+        ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Add this line
         ['<C-Space>'] = cmp.mapping.complete(),
     }),
 })
