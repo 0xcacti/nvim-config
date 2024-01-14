@@ -40,3 +40,12 @@ vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd(":source %")
 end)
+
+vim.keymap.set("n", "<leader>ee", function()
+    local lines = {
+        "if err != nil {",
+        "\treturn err",
+        "}"
+    }
+    vim.api.nvim_put(lines, "", true, true)
+end)
