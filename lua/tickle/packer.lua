@@ -87,6 +87,19 @@ return require('packer').startup(function(use)
         end
     })
 
+    -- nvim-test
+    use {
+        "klen/nvim-test",
+        config = function()
+            require('nvim-test').setup()
+        end
+    }
+
     -- zen mode
     use("folke/zen-mode.nvim")
+
+    use("niuiic/core.nvim")
+
+    -- local
+    use("/Users/t/code/l/banner.nvim")
 end)
