@@ -28,7 +28,8 @@ lsp_zero.format_on_save({
         timeout_ms = 10000,
     },
     servers = {
-        ['tsserver'] = { 'javascript', 'typescript' },
+        ['tsserver'] = { 'javascript', 'typescript', 'svelte' },
+        ['svelte'] = { 'svelte' },
         ['rust_analyzer'] = { 'rust' },
         ['gopls'] = { 'go' },
         ['lua_ls'] = { 'lua' },
