@@ -58,9 +58,14 @@ require('lspconfig').rust_analyzer.setup({
     }
 })
 
+require('lspconfig').tailwindcss.setup({
+    on_attach = lsp_zero.on_attach,
+})
+
+
 require('mason').setup({})
 require('mason-lspconfig').setup({
-    ensure_installed = { 'tsserver', 'rust_analyzer', 'gopls', 'pyright' },
+    ensure_installed = { 'tsserver', 'rust_analyzer', 'gopls', 'pyright', 'tailwindcss' },
     handlers = {
         lsp_zero.default_setup,
         lua_ls = function()
