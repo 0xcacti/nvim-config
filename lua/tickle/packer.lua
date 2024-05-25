@@ -100,8 +100,9 @@ return require('packer').startup(function(use)
 
     use("niuiic/core.nvim")
 
-    -- ts-errors
+    -- ts
     use("OlegGulevskyy/better-ts-errors.nvim")
+    use('MunifTanjim/prettier.nvim')
 
     -- local
     use("/Users/t/code/l/banner.nvim")
