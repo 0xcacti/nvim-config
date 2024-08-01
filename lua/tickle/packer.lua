@@ -103,4 +103,14 @@ return require('packer').startup(function(use)
     -- ts
     use("OlegGulevskyy/better-ts-errors.nvim")
     use('MunifTanjim/prettier.nvim')
+
+    -- lisp
+    use({
+        "monkoose/nvlime",
+        requires = {
+            { 'monkoose/parsley' },
+            { 'hrsh7th/nvim-cmp' },
+            { 'gpanders/nvim-parinfer' }
+        }
+    })
 end)

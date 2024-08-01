@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/Users/t/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["banner.nvim"] = {
-    loaded = true,
-    path = "/Users/t/.local/share/nvim/site/pack/packer/start/banner.nvim",
-    url = "https://github.com//Users/t/code/l/banner.nvim"
-  },
   ["better-ts-errors.nvim"] = {
     loaded = true,
     path = "/Users/t/.local/share/nvim/site/pack/packer/start/better-ts-errors.nvim",
@@ -165,6 +160,11 @@ _G.packer_plugins = {
     path = "/Users/t/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-parinfer"] = {
+    loaded = true,
+    path = "/Users/t/.local/share/nvim/site/pack/packer/start/nvim-parinfer",
+    url = "https://github.com/gpanders/nvim-parinfer"
+  },
   ["nvim-surround"] = {
     config = { "\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0" },
     loaded = true,
@@ -187,10 +187,20 @@ _G.packer_plugins = {
     path = "/Users/t/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
+  nvlime = {
+    loaded = true,
+    path = "/Users/t/.local/share/nvim/site/pack/packer/start/nvlime",
+    url = "https://github.com/monkoose/nvlime"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/t/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  parsley = {
+    loaded = true,
+    path = "/Users/t/.local/share/nvim/site/pack/packer/start/parsley",
+    url = "https://github.com/monkoose/parsley"
   },
   playground = {
     loaded = true,
@@ -240,6 +250,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for nvim-surround]], true)
 try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
 time([[Config for nvim-surround]], false)
+-- Config for: nvim-test
+time([[Config for nvim-test]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14nvim-test\frequire\0", "config", "nvim-test")
+time([[Config for nvim-test]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
@@ -248,10 +262,6 @@ time([[Config for trouble.nvim]], false)
 time([[Config for monokai]], true)
 try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme monokai\bcmd\bvim\0", "config", "monokai")
 time([[Config for monokai]], false)
--- Config for: nvim-test
-time([[Config for nvim-test]], true)
-try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14nvim-test\frequire\0", "config", "nvim-test")
-time([[Config for nvim-test]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
