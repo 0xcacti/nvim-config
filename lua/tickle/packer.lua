@@ -110,7 +110,6 @@ return require('packer').startup(function(use)
         requires = {
             { 'monkoose/parsley' },
             { 'hrsh7th/nvim-cmp' },
-            { 'gpanders/nvim-parinfer' }
         }
     })
 end)
