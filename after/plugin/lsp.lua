@@ -79,7 +79,8 @@ require('lspconfig').tailwindcss.setup({
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-    ensure_installed = { 'tsserver', 'rust_analyzer', 'gopls', 'pyright', 'tailwindcss' },
+    ensure_installed = { 'ts_ls', 'rust_analyzer', 'gopls', 'pyright', 'tailwindcss', 'lua_ls' },
+
     handlers = {
         lsp_zero.default_setup,
         lua_ls = function()

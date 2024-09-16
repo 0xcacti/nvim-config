@@ -22,9 +22,18 @@ return require('packer').startup(function(use)
             vim.cmd('colorscheme monokai')
         end
     }
+
     -- tree sitter
+    use('nvim-treesitter/nvim-treesitter')
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
-    use('nvim-treesitter/playground')
+    use('nvim-treesitter/nvim-treesitter-textobjects')
+    use({
+        'nvim-treesitter/playground',
+        after = 'nvim-treesitter',
+        requires = 'nvim-treesitter/nvim-treesitter'
+    })
+
+
 
     -- harpoon
     use('theprimeagen/harpoon')
