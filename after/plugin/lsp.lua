@@ -110,3 +110,5 @@ cmp.setup({
         ['<C-Space>'] = cmp.mapping.complete(),
     }),
 })
+
+vim.keymap.set("n", "<leader>lsp", ":LspRestart<CR>", { silent = true })
