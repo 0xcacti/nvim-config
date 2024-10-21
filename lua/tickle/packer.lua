@@ -123,4 +123,11 @@ return require('packer').startup(function(use)
             { 'hrsh7th/nvim-cmp' },
         }
     })
+
+    -- hardtime - fix bad habits
+    use({
+        "m4xshen/hardtime.nvim",
+        dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
+        opts = {}
+    })
 end)
